@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinesh Singh Mahara — BCA Student & Web Developer</title>
+<meta name="description" content="Portfolio of Dinesh Singh Mahara, a BCA student in Nepal building web applications.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dinesh Singh Mahara— Portfolio">
+<meta property="og:description" content="BCA student in Nepal, building web apps.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top bar (mobile) / Side rail (desktop) -->
+<header class="rail">
+  <div class="rail-top">
+    <a href="#hero" class="rail-mark">DM</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Switch color theme">
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg>
+    </button>
+  </div>
+
+  <nav class="rail-nav" id="railNav">
+    <a href="#hero" class="nav-link active">Introduction</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="rail-bottom">
+    <a href="./DineshCV.pdf" class="rail-resume" download="DineshCv.pdf">Résumé ↓</a>
+    <div class="rail-socials">
+    </div>
+    
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="section hero">
+    <div class="hero-tiers" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <p class="hero-eyebrow reveal" style="--d:0">Kailali, Nepal</p>
+    <h1 class="hero-title">
+      <span class="reveal" style="--d:1">Dinesh </span>
+      <span class="reveal" style="--d:2">Mahara.</span>
+    </h1>
+    <p class="hero-sub reveal" style="--d:3">
+     Currently, BCA student building web applications that work first,
+      look good second — currently on the hunt for an internship
+      where I can do both.
+    </p>
+    <div class="hero-actions reveal" style="--d:4">
+      <a href="#projects" class="btn btn-primary">See my work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+    
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title"><span class="num">01</span> About</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a third-year BCA student at FarWestern University, based in Mahendranagar.
+          I got into programming the usual way — a college C course that I hated
+          for a month and then couldn't stop tinkering with. Since then I've
+          moved from console programs to full web applications, and most recently
+          into building things people actually use, not just submit for marks.
+        </p>
+        <p>
+          Outside of coursework, I spend time contributing to small open-source
+          repos, helping juniors in my college debug their Python, and Web projects, and
+          slowly writing a blog about what I learn along the way. I like systems
+          that are simple to explain — if I can't sketch how a feature works on
+          paper, I probably don't understand it well enough to build it.
+        </p>
+      </div>
+      <dl class="about-facts">
+        <div><dt>Based in</dt><dd>Mahendranagar, Nepal</dd></div>
+        <div><dt>Studying</dt><dd>BCA, 3rd Semester</dd></div>
+        <div><dt>Focus</dt><dd>Web Development/Ai/ML</dd></div>
+        <div><dt>Looking for</dt><dd>Internship / Junior role</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title"><span class="num">02</span> Projects</h2>
+    <p class="section-lead">A few things I've built and shipped, not just prototyped.</p>
+
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project-media">
+          <img src="shopzone.png" alt="Screenshot of the ShopZone ecommerce website">
+        </div>
+        <div class="project-body">
+          <h3>Ecommerce Website-ShopZone</h3>
+          <p class="project-role">Solo project · First year Web coursework, extended for real use</p>
+          <p>
+            Built for a local business to replace their paper register. Handles
+            product management, inventory tracking, and order processing with a user-friendly interface.
+          </p>
+          <ul class="project-stack">
+            <li>HTML</li><li>MySQL</li><li>JavaScript</li><li>CSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://maharadinesh2727-maker.github.io/ShopZone/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/maharadinesh2727-maker/ShopZone" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <img src="todo.png" alt="Screenshot of the ToDo app">
+        </div>
+        <div class="project-body">
+          <h3>Kaam — ToDo App</h3>
+          <p class="project-role">Solo project · Side project</p>
+          <p>
+            To help me keep track of my daily tasks, I built a simple ToDo app with user authentication and a MongoDB backend. It allows users to create, edit, and delete tasks, and mark them as complete. The app is responsive and works well on both desktop and mobile devices.
+          </p>
+          <ul class="project-stack">
+            <li>JavaScript</li><li>Node.js</li><li>MongoDB</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://kaam-orcin-alpha.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/maharadinesh2727-maker/Kaam-ToDo" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <img src="weather.png" alt="Screenshot of the weather dashboard">
+        </div>
+        <div class="project-body">
+          <h3>Mausam — Weather Dashboard</h3>
+          <p class="project-role">Solo project · Learning project</p>
+          <p>
+            My first project consuming a real third-party API. Shows current
+            conditions and a 5-day outlook for any city in Nepal, with results
+            cached locally so it doesn't hammer the API on every reload. Simple
+            on purpose — this one was about getting fetch, async/await, and
+            error states right.
+          </p>
+          <ul class="project-stack">
+            <li>HTML</li><li>CSS</li><li>Vanilla JS</li><li>OpenWeather API</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://maharadinesh2727-maker.github.io/Mausam-Weather/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/maharadinesh2727/Mausam-Weather" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2 class="section-title"><span class="num">03</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>JavaScript, Python, C, Java</p>
+      </div>
+      <div class="skill-group">
+        <h3>Web</h3>
+        <p>HTML, CSS, Node.js, Express, Bootstrap, REST APIs</p>
+      </div>
+      <div class="skill-group">
+        <h3>Data</h3>
+        <p>MySQL, MongoDB, basic data modeling &amp; normalization</p>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <p>Git &amp; GitHub, VS Code, Figma (basic), Linux command line</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section-title"><span class="num">04</span> Experience</h2>
+    <ol class="timeline">
+      <li>
+        <div class="timeline-when">2026 — Present</div>
+        <div class="timeline-what">
+          <h3>Freelance Web Developer</h3>
+          <p>Building and maintaining small business websites for local shops in Dhangadhi — mostly WordPress customization and a few from-scratch static sites.</p>
+        </div>
+      </li>
+    
+      <li>
+        <div class="timeline-when">2025</div>
+        <div class="timeline-what">
+          <h3>Started BCA</h3>
+          <p>FarWestern University, Mahendranagar. Coursework in Python, DSA, DBMS, software engineering, and computer networks alongside web development.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title"><span class="num">05</span> Contact</h2>
+    <p class="section-lead">
+      I'm open to internships, junior developer roles, and freelance web work.
+      The fastest way to reach me is email.
+    </p>
+    <div class="contact-grid">
+      <a href="mailto:dinesh.mahara@example.com" class="contact-primary">maharadinesh2727@gmail.com</a>
+      <div class="contact-secondary">
+        <a href="https://github.com/maharadinesh2727-maker" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/dinesh-singh-mahara-6377a939a/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.facebook.com/dinesh.singh.mahara.2025" target="_blank" rel="noopener">Facebook ↗</a>
+         <a href="https://x.com/Dineshseeks" target="_blank" rel="noopener">Twitter ↗</a>
+       <a href="./DineshCV.pdf" target="_blank">
+    View Resume
+</a>
+
+<a href="./DineshCV.pdf" download="DineshCV.pdf">
+    Download Resume
+</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built by Dinesh Singh Mahara with plain HTML, CSS &amp; JS. © 2026.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
